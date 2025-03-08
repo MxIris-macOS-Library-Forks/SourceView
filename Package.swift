@@ -1,21 +1,33 @@
-// swift-tools-version: 5.8
+// swift-tools-version: 6.0
 
 import PackageDescription
 
-let settings: [SwiftSetting] = [
-	.enableExperimentalFeature("StrictConcurrency")
-]
-
 let package = Package(
 	name: "SourceView",
-	platforms: [.macOS(.v13)],
+	platforms: [
+		.macOS(.v14),
+	],
 	products: [
 		.library(name: "SourceView", targets: ["SourceView"]),
 	],
 	dependencies: [
+		.package(url: "https://github.com/ChimeHQ/IBeam", branch: "main"),
+		.package(url: "https://github.com/ChimeHQ/KeyCodes", from: "1.0.3"),
+		.package(url: "https://github.com/ChimeHQ/Ligature", branch: "main"),
+		.package(url: "https://github.com/ChimeHQ/Rearrange", branch: "main"),
+		.package(url: "https://github.com/ChimeHQ/Textbook", revision: "a70d9cd0b7da1878e1db448283b431834fd00376"),
 	],
 	targets: [
-		.target(name: "SourceView", swiftSettings: settings),
-		.testTarget(name: "SourceViewTests", dependencies: ["SourceView"], swiftSettings: settings),
+		.target(
+			name: "SourceView",
+			dependencies: [
+				"IBeam",
+				"KeyCodes",
+				"Ligature",
+				"Rearrange",
+				"Textbook",
+			]
+		),
+		.testTarget(name: "SourceViewTests", dependencies: ["SourceView"]),
 	]
 )

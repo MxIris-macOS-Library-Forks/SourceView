@@ -1,0 +1,50 @@
+{
+  "originHash" : "ee09842f842176deb49117bf75eb1863e383bf5a0faa7b4ee4f2037ff9529062",
+  "pins" : [
+    {
+      "identity" : "glyph",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChimeHQ/Glyph",
+      "state" : {
+        "branch" : "main",
+        "revision" : "25ffb2917c773ef6b8e54695f54e0cc55862dda2"
+      }
+    },
+    {
+      "identity" : "ibeam",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChimeHQ/IBeam",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ba2dc315a3b5c303f23459f90cc140987295ddd7"
+      }
+    },
+    {
+      "identity" : "keycodes",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChimeHQ/KeyCodes",
+      "state" : {
+        "revision" : "93ba759d2bfd7b5233294188bc685fd09dce2729",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "ligature",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChimeHQ/Ligature",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9e1c74907558cff5ce43615e24191f87baade69a"
+      }
+    },
+    {
+      "identity" : "textbook",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChimeHQ/Textbook",
+      "state" : {
+        "revision" : "a70d9cd0b7da1878e1db448283b431834fd00376"
+      }
+    }
+  ],
+  "version" : 3
+}
